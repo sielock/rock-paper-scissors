@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(#228483, #6B2980) no-repeat fixed;
+}
+
+h1 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#choices input {
+    width: 124px;
+    margin: 0 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, grey, aqua, violet);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+#inGame, #postGame {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -60px;
+}
+
+#inGame span, #postGame span{
+    display: block;
+    margin-top: 10px;
+    color: white;
+}
+
+#postGame input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px; 
+    background-image: linear-gradient(to right, grey, aqua, violet);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+#postGame {
+    width: 120px;
+    margin: 0 auto;
+}
+
+#scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+    color: white;
+}

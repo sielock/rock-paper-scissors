@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <!--beginning to transition functionality to webpage instead of console-->
-    <div id="choices">
-        <input type="button" value="Rock" id="cButton">
-        <input type="button" value="Paper" id="cButton">
-        <input type="button" value="Scissors" id="cButton">
-    </div>
-  
-    <script src="game.js"></script>
+    
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>RPS Game</title>
+    </head>
 
-</body>
+    <body>
+        <h1>Rock || Paper || Scissors</h1>
+        <div id="game">
+
+            <div id="scores">
+                <div id="cScore">
+                    <h3>Computer</h3>
+                        <span id="compScore">0</span>
+                </div>
+                <div id="pScore">
+                    <h3>Player</h3>
+                        <span id="playerScore">0</span>
+                </div>
+            </div>
+
+            <div id="inGame">
+                <span id="rounds">Round 0 of 5</span>
+                <span id="results">Begin!</span>
+            </div>
+
+            <div id="choices">
+                <input type="button" value="Rock" id="rButton" onclick="playRound(this.value)">
+                <input type="button" value="Paper" id="pButton" onclick="playRound(this.value)">
+                <input type="button" value="Scissors" id="sButton" onclick="playRound(this.value)">
+            </div>
+
+            <div id="postGame" style="display: none;">
+                <span id="state" style="color: white;"></span>
+                <span id="victor" style="color: aqua;"></span>
+                <input type="button" value="Play Again" id="aButton" onclick="restart()" style="background-color: aqua">
+            </div>
+        </div>
+    </body>
+
+<script src="game.js"></script>
 
 </html>
